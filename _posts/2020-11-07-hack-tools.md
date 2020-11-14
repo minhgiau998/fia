@@ -8,7 +8,7 @@ date: 2020-11-07 09:00:00
 tags: [Security, Penetration Testing]
 class: post-template
 subclass: "post"
-author: ghost
+author: fia
 ---
 
 <p>HackTools là một tiện ích mở rộng cho trình duyệt nhằm tạo điều kiện thuận lợi cho các bài kiểm tra thâm nhập ứng dụng web của bạn. Nó bao gồm các bảng <strong>cheatsheet</strong> (bảng tra cứu) cũng như tất cả các <strong>payloads</strong> được dùng để khai thác các lỗ hổng nguy hiểm như XSS, SQL, Reverse shells và nhiều hơn thế nữa.</p>

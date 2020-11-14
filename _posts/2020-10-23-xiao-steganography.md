@@ -8,7 +8,7 @@ date: 2020-10-23 09:00:00
 tags: [Hacking, Steganography]
 class: post-template
 subclass: "post"
-author: ghost
+author: fia
 ---
 
 <p>Xiao Steganography là một công cụ <strong><a href="https://vi.wikipedia.org/wiki/K%E1%BB%B9_thu%E1%BA%ADt_gi%E1%BA%A5u_tin">steganography</a></strong> cho phép người dùng ẩn giấu tập tin bí mật trong tập tin hình ảnh (<strong>BMP</strong>) hoặc tập tin âm thanh (<strong>WAV</strong>). Công cụ này cũng cho phép người dùng mã hóa tập tin bí mật bằng nhiều thuật toán mã hóa được hỗ trợ (bao gồm <strong>RC4</strong> và <strong>3DES</strong>) và thuật toán <strong>hash</strong> (bao gồm <strong>SHA</strong> và <strong>MD5</strong>). Người dùng cung cấp tập tin bên ngoài (là lớp vỏ để bao bên ngoài tập tin bí mật), tập tin cần ẩn giấu, lựa chọn thuật toán mã hóa và khóa bí mật. Để giải nén tập tin bí mật, người dùng cần cung cấp khóa bí mật.</p>

@@ -8,7 +8,7 @@ date: 2020-10-16 09:00:00
 tags: [Security, Penetration Testing]
 class: post-template
 subclass: "post"
-author: ghost
+author: fia
 ---
 
 <p>Penetration Testing (Kiểm Tra Thâm Nhập) là quy trình xác định các lỗ hổng bảo mật trong ứng dụng bằng cách đánh giá hệ thống hoặc mạng bằng các kỹ thuật khác nhau. Các điểm yếu của một hệ thống được khai thác trong quá trình này đều thông qua một cuộc tấn công mô phỏng (được sự cho phép của các tổ chức).</p>

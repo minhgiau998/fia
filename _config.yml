@@ -9,11 +9,11 @@ words_per_minute: 200
 baseurl: "/"
 
 # Website info
-title: Ghost
-description: The professional publishing platform
+title: FIA
+description: Don't be afraid to find us, we are here to secure your digital life
 cover: assets/images/blog-cover.jpg
-logo: assets/images/blog-icon.png
-logo_dark: assets/images/favicon.png
+# logo: assets/images/favicon.png
+# logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
 CNAME: #add cname for website to be created
 
@@ -22,7 +22,7 @@ navigation: True # show the navbar links
 subscribers: True # you need to connect an external service for this to work,
 # if 'True' the submit button is disabled for now, but you can change that
 # by editing `_includes/subscribe-form.html`
-twitter: tryghost # replace by your username
+twitter: fptinformationassurance # replace by your username
 facebook: fptinformationassurance # replace by your username
 
 # Disqus
@@ -33,7 +33,7 @@ disqus_shortname: jekyller # replace with your disqus username
 google_analytics: UA-69281367-1 # replace with your GA tracking identifier
 
 # Permalinks
-permalink: /:title/
+permalink: /blog/:title/
 # permalink: /author/:author
 # permalink: /tag/:tag/
 
