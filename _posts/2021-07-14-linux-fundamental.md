@@ -18,7 +18,7 @@ author: fia
 	<li>Hồ Ngọc Thanh Trúc</li>
 </ul>
 <p>Bài viết sẽ rất hữu ích với những bạn mới bắt đầu tìm hiểu về hệ điều hành <strong>Linux</strong> cũng như các lệnh điều khiển cơ bản trên <strong>Linux</strong>.</p>
-<p><img src="assets/images/linux-fundamental/Header.png" alt="Header.png"></p>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Header.png" alt="Header.png"></p>
 <h1>I: Shell là gì ?</h1>
 <ul>
 	<li>
