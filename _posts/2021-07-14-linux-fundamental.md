@@ -18,3 +18,13 @@ author: fia
 	<li>Hồ Ngọc Thanh Trúc</li>
 </ul>
 <p>Bài viết sẽ rất hữu ích với những bạn mới bắt đầu tìm hiểu về hệ điều hành <strong>Linux</strong> cũng như các lệnh điều khiển cơ bản trên <strong>Linux</strong>.</p>
+<p><img src="" alt="header.png"></p>
+<h1>I: Shell là gì ?</h1>
+<ul>
+	<li>
+		<p>Shell là một môi trường trong đó chúng ta có thể chạy các lệnh, các chương trình và Shell script. Mỗi phiên bản của Shell có bộ thiết lập các lệnh và hàm được thừa nhận riêng của nó. Shell nhận input từ người dùng để chạy các chương trình trên cơ sở đầu vào đó. Khi một chương trình hoặc lệnh được hoàn thành, nó hiển thị kết quả (output) của chương trình đó.</p>
+	</li>
+	<li>
+		<p>Shell còn được gọi là trình thông dịch. Tương tự như một trình biên dịch, một trình thông dịch dịch mã người dùng thực hiện thành mã máy. Một trong những điểm khác biệt là trình thông dịch thực hiện từng câu một. Trong khi đó, một trình biên dịch sẽ quét toàn bộ chương trình và dịch tất cả thành mã máy.</p>
+	</li>
+</ul>
