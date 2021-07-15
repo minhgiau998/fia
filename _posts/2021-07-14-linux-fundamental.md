@@ -18,7 +18,7 @@ author: fia
 	<li>Hồ Ngọc Thanh Trúc</li>
 </ul>
 <p>Bài viết sẽ rất hữu ích với những bạn mới bắt đầu tìm hiểu về hệ điều hành <strong>Linux</strong> cũng như các lệnh điều khiển cơ bản trên <strong>Linux</strong>.</p>
-<p><img src="https://raw.githubusercontent.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Header.png" alt="Header.png"></p>
+<p><img src="https://raw.githubusercontent.com/FIA-FPT/fia/develop/assets/images/linux-fundamental/Header.png" alt="Header.png"></p>
 <h1>I. Shell là gì ?</h1>
 <ul>
 	<li>
@@ -29,9 +29,9 @@ author: fia
 	</li>
 </ul>
 <h1>II. Một số kiểu Shell trong Kali Linux</h1>
-<p><img src="https://raw.githubusercontent.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Shell.png" alt="Shell.png"></p>
+<p><img src="https://raw.githubusercontent.com/FIA-FPT/fia/develop/assets/images/linux-fundamental/Shell.png" alt="Shell.png"></p>
 <h2>1. Bash</h2>
-<p><img src="https://raw.githubusercontent.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Bash.png" alt="Bash.png"></p>
+<p><img src="https://raw.githubusercontent.com/FIA-FPT/fia/develop/assets/images/linux-fundamental/Bash.png" alt="Bash.png"></p>
 <p>Đây là một shell phổ biến nhất trong số những người dùng Linux. Thật khó để nghĩ về shell mà không có <strong>Bourne-Again Shell</strong> (bash). Nhiều bản phân phối Linux có bash là shell mặc định, vì bash shell GNU mặc định. Được phát hành vào năm 1989, nó đã có một vài thập kỷ phát triển mạnh mẽ.</p>
 <p>Tiền thân của Bash là <strong>The Bourne Shell</strong> (sh), là một trong những shell gốc của Unix. Một tính năng hấp dẫn đối với các lập trình viên sh là họ có thể chuyển trực tiếp các tập lệnh của mình sang bash mà hoàn toàn được giữ nguyên. Bash cũng cung cấp một số cải tiến cho người dùng:</p>
 <ul>
@@ -39,7 +39,7 @@ author: fia
 	<li>Lịch sử lệnh</li>
 </ul>
 <h2>2. KornShell</h2>
-<p><img src="https://raw.githubusercontent.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Korn.png" alt="Korn.png"></p>
+<p><img src="https://raw.githubusercontent.com/FIA-FPT/fia/develop/assets/images/linux-fundamental/Korn.png" alt="Korn.png"></p>
 <p>Thường được gọi là <strong>ksh</strong>, KornShell là một Linux Shell thay thế phổ biến có nguồn gốc từ Bell Labs vào những năm 80. Không có nhiều sự khác biệt giữa bash và ksh, nhưng mỗi cái đều có những lợi thế nhỏ so với cái khác. Ksh, ví dụ, có lệnh cd cũ mới. Nếu bạn đang ở trong thư mục Desktop/bin/a/, nếu cần truy cập /Desktop/bin/b, bạn chỉ cần nhập:</p>
 <code>$ cd a b</code>
 <p>Các lợi ích của ksh bao gồm:</p>
@@ -49,7 +49,7 @@ author: fia
 	<li>Mảng liên kết</li>
 </ul>
 <h2>3. Tcsh</h2>
-<p><img src="https://raw.githubusercontent.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Tcsh.png" alt="Tcsh.png"></p>
+<p><img src="https://raw.githubusercontent.com/FIA-FPT/fia/develop/assets/images/linux-fundamental/Tcsh.png" alt="Tcsh.png"></p>
 <p><strong>Tcsh</strong> có thể bắt nguồn từ những ngày đầu của Unix. Đây là phiên bản cải tiến của C shell (csh) và có các tính năng:</p>
 <ul>
 	<li>Hoàn thành dòng lệnh có thể lập trình</li>
