@@ -7,7 +7,7 @@ class: page-template
 subclass: "post page"
 ---
 
-<p><img src="https://raw.githubusercontent.com/minhgiau998/image/develop/main/about.jpg" alt="about.jpg"></p>
+<p><img src="https://raw.githubusercontent.com/FIA-FPT/fia/develop/assets/images/about.jpg" alt="about.jpg"></p>
 
 <blockquote>
 <p>Don&#39;t be afraid to find us, we are here to secure your digital life.</p>
