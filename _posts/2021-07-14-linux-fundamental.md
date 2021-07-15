@@ -209,3 +209,21 @@ Tùy thuộc vào bản phân phối và cách hệ thống được cung cấp,
 Để kiểm tra xem tiện ích <code>locate</code> có được cài đặt trên hệ thống hay không, hãy mở terminal, nhập <code>locate</code> và nhấn Enter.
 
 Nếu gói được cài đặt, hệ thống sẽ hiển thị thông báo <code>locate: no pattern to search for specified</code>.</p>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Locate01.png" alt="Locate01.png"></p>
+<p>Còn nếu không, bạn sẽ thấy một thông báo <code>locate command not found</code>.</p>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Locate02.png" alt="Locate02.png"></p>
+<p>Nếu **locate** chưa được cài đặt, bạn có thể dễ dàng cài đặt nó bằng trình quản lý gói của bản phân phối. Có nhiều cách nhưng mình chỉ liệt kê một thôi.
+
+Cài đặt <code>locate</code> trên <strong>Ubuntu</strong>, <strong>Debian</strong> và <strong>Google Shell</strong>:
+
+<code>$ apt update
+$ sudo apt install mlocate</code>
+
+<strong>Cơ Sở Dữ Liệu</strong> có thể được cập nhật thủ công bằng cách chạy lệnh <code>updatedb</code> với quyền <strong>root</strong> hoặc người dùng có quyền.
+
+<code>$ sudo updatedb</code></p>
+<em>Ví dụ:</em>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Locate03.png" alt="Locate03.png"></p>
+<h3>Cú pháp</h3>
+<p><code>locate [Options] Pattern...</code></p>
+<h3>Cách sử dụng</h3>
