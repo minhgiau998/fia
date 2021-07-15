@@ -6,3 +6,7 @@ security:
   name: security
   description: Security used to be an inconvenience sometimes, but now it’s a necessity all the time.
   cover: assets/images/security.jpg
+fundamental: 
+  name: fundamental
+  description: Basic coverage of some basic concept on hacking
+  cover: assets/images/fundamental.jpg

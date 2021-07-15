@@ -72,8 +72,8 @@ repo: jasper2
 branch: master
 relative_source: ../jasper2/
 destination: ../jasper2-pages/
-production_url: https://fia.vercel.app/
-source_url: https://fia.vercel.app/
+production_url: https://fptufia.vercel.app/
+source_url: https://fptufia.vercel.app/
 
 exclude:
   - assets/css
