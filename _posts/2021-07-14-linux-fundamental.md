@@ -118,3 +118,83 @@ author: fia
 	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Mani11.png" alt="Mani11.png"></p>
 	<li>Sau khi tiến hành xóa đi thumuc2 bằng lệnh <code>rmdir thumuc2</code> thì thumuc2 đã biến mất và chỉ còn lại file1 mới tạo lúc nãy</li>
 </ul>
+<h2>Lệnh CP</h2>
+<h3>Định nghĩa</h3>
+<p>Lệnh <code>cp</code> trên Linux được sử dụng để copy một file hoặc một thư mục từ một vị trí đến vị trí khác. Đây gần như là chương trình lệnh cơ bản của các dòng Linux phân phối khác.</p>
+<h3>Cú pháp</h3>
+<p><code>cp [Options] Source Destination</code></p>
+<p>Trong đó:</p>
+<ul>
+	<li><strong>Options</strong> là các tùy chọn.</li>
+	<li><strong>Source</strong> là file nguồn hoặc thư mục nguồn.</li>
+	<li><strong>Destination</strong> là tên file đích hoặc thư mục đích.</li>
+</ul>
+<p><em>Ví dụ: Copy vidu1.txt từ thumuc1 sang thumuc2</em></p>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Cp01.png" alt="Cp01.png"></p>
+<p><em>Ví dụ: Copy nhiều thư mục vào một thư mục</em></p>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Cp02.png" alt="Cp02.png"></p>
+<p>Như vậy lệnh <code>cp</code> được mở rộng ra thành cấu trúc:
+<code>cp [Options] Source1 Source2 Source3...Source-n Destination</code></p>
+<h3>Các Option của lệnh <code>cp</code></h3>
+<ul>
+	<li><code>-r</code>, <code>-R</code>, <code>--recursive</code>: copy folder và file đệ quy, tức là copy toàn bộ thư mục hoặc các file con của thư mục được copy.</li>
+	<em>Ví dụ: Copy toàn bộ file con của thư mục docm trong thumuc1 sang thư mục backup trong thumuc2</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Cp03.png" alt="Cp03.png"></p>
+	<li><code>-a</code>, <code>--archive</code>: sử dụng <code>-a</code>, sẽ lưu trữ các tệp và thư mục trong khi sao chép. Nghĩa là với tùy chọn <code>-a</code> sẽ sinh ra một thư mục trong thư mục đến cùng tên với thư mục gốc và chuyển file vào đó.</li>
+	<em>Ví dụ:</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Cp04.png" alt="Cp04.png"></p>
+	<li><code>-i</code>, <code>--interactive</code>: Ghi đè file ở thư mục đích. Luôn có nhắc nhở trước khi ghi đè. <strong>Y</strong> là chấp nhận thao tác ghi đè và <strong>N</strong> là từ chối.</li>
+	<em>Ví dụ: Ghi đè file1 trong thumuc1 lên file2 trong thumuc2 với thao tác chấp thuận ghi đè</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Cp05.png" alt="Cp05.png"></p>
+	<em>Ví dụ: Ghi đè file1 trong thumuc1 lên file2 trong thumuc2 với thao tác không chấp thuận ghi đè.</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Cp06.png" alt="Cp06.png"></p>
+	<li><code>-v</code>, <code>--verbose</code>: Quá trình hoạt động của lệnh <code>cp</code> sẽ được hiển thị.</li>
+	<em>Ví dụ:</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Cp07.png" alt="Cp07.png"></p>
+	<li><code>-p</code>: Để giữ lại các thuộc tính thông tin của file được copy.</li>
+	<p>Các thuộc tính được giữ lại gồm : Access time, Modification date, User ID, Group ID, File flags, File mode, Access Control Lists.</p>
+	<em>Ví dụ:</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Cp08.png" alt="Cp08.png"></p>
+	<li><code>-n</code>, <code>--no clobber</code>: Giả sử thư mục đích của bạn đã có file cùng tên file bạn đang muốn copy. Thì bạn có thể sử dụng <code>-n</code> để ép buộc lệnh <code>cp</code> không được ghi đè nếu file nguồn và file đích cùng tên. Khi sử dụng option <code>-n</code>, thì sẽ không có hiện prompt xác nhận copy mà là ép lệnh luôn.</li>
+	<em>Ví dụ:</em>
+	<p>Bình thường copy như sau:</p>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Cp09.png" alt="Cp09.png"></p>
+	<p>Khi dùng tham số <code>-n</code>:</p>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Cp10.png" alt="Cp10.png"></p>
+	<li><code>-f</code>, <code>--force</code>:  Để ép buộc lệnh cp copy file ghi đè lên file đang tồn tại ở thư mục đích nếu nó cùng tên file nguồn copy.</li>
+	<em>Ví dụ:</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Cp11.png" alt="Cp11.png"></p>
+	<li><code>-l</code>, <code>--link</code>: Tạo hard-link thay vì copy.</li>
+	<em>Ví dụ:</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Cp12.png" alt="Cp12.png"></p>
+	<em>Kết quả:</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Cp13.png" alt="Cp13.png"></p>
+	<li><code>-s</code>, <code>--symbolic-link</code>: Tạo <strong>symbolic links</strong> thay vì copy.</li>
+	<p><strong>Symbolic Link</strong> (liên kết tượng trưng) trong ngành máy tính là thuật ngữ chỉ một file tham chiếu đến file khác hoặc thư mục khác dưới dạng đường dẫn tương đối hoặc tuyệt đối. Ngoài ra, <strong>symbolic link</strong> cũng hay được gọi tắt là <strong>Symlink</strong> hay <strong>Softlink</strong>.</p>
+	<li><code>--attributes-only</code>: Sao chép các thuộc tính từ nguồn đến đích. Có thể thấy file mới được tạo ra nhưng chỉ có thuộc tính còn nội dung file là không có.</li>
+	<em>Ví dụ:</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Cp14.png" alt="Cp14.png"></p>
+	<li><code>-u</code>, <code>--update</code>: Copy chỉ khi file nguồn mới hơn file đích hoặc file đích bị mất.</li>
+	<em>Ví dụ:</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Cp15.png" alt="Cp15.png"></p>
+	<li><code>--backup</code>: Tạo một bản backup ở thư mục đích. Khi dùng tham số này thì một file backup sẽ được tạo ra ở thư mục đích cùng với việc copy file.</li>
+	<p>Phần backup có các tùy chọn:</p>
+	<ul>
+		<li><strong>none, off</strong>: không tạo file backup.</li>
+		<li><strong>numbered, t</strong>: số lượng file backup là bao nhiêu.</li>
+		<li><strong>existing, nil</strong>: nếu file backup có rồi thì ghi đè hoặc bỏ qua.</li>
+		<li><strong>simple, never</strong>: luôn tạo bản backup simple.</li>
+	</ul>
+	<em>Ví dụ:</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Cp16.png" alt="Cp16.png"></p>
+	<li><code>--sparse</code>: Copy tên file và tạo ở thư mục đích 1 file cùng tên và dung lượng bằng 0.</li>
+	<p>Một số tham số khi dùng sparse:</p>
+	<ul>
+		<li><strong>sparse=auto</strong></li>
+		<li><strong>sparse-always</strong></li>
+		<li><strong>sparse=never</strong></li>
+	</ul>
+	<li><code>--help</code>: hỗ trợ.</li>
+	<p>Trích một phần trong phần <code>--help</code>.</p>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Cp17.png" alt="Cp17.png"></p>
+</ul>
