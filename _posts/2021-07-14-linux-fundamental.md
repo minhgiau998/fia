@@ -298,3 +298,46 @@ $ sudo apt install mlocate</code></p>
 </ul>
 <h2>Lệnh RM</h2>
 <h3>Định nghĩa</h3>
+<p>Lệnh <code>rm</code> (remove) được sử dụng để xóa các tập tin và thư mục.
+
+<code>rm</code> loại bỏ từng tệp được chỉ định trên dòng lệnh. Theo mặc định, nó không loại bỏ các thư mục. Khi được sử dụng đệ quy, nó có thể được sử dụng để xóa các thư mục.</p>
+<h3>Cú pháp</h3>
+<p><code>$ rm [Options] [đường dẫn]</code></p>
+<em>Ví dụ: Xóa tập tin file2 trong thumuc1:</em>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Rm01.png" alt="Rm01.png"></p>
+<em>Ví dụ: Xóa nhiều tệp cùng một lúc:</em>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Rm02.png" alt="Rm02.png"></p>
+<h3>Các Option của lệnh RM</h3>
+<ul>
+	<li><code>-f</code>, <code>--force</code>: được sử dụng để ép buộc xóa file mà không hỏi xác nhận. Tùy chọn này cũng sẽ không quan tâm đến việc tồn tại của filename mà bạn cung cấp. File có tồn tại thì xóa, không thì thôi.</li>
+	<em>Ví dụ: Ép buộc xóa file2 trong thumuc1</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Rm03.png" alt="Rm03.png"></p>
+	<li><code>-i</code>, <code>--interactive</code>: Nhắc nhở trước khi xóa một tập tin.</li>
+	<p><strong>Y</strong> là chấp nhận thao tác xóa và <strong>N</strong> là từ chối.</p>
+	<em>Ví dụ: Xóa file3 trong thumuc1 với thao tác chấp thuận xóa và kiểm tra.</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Rm04.png" alt="Rm04.png"></p>
+	<em>Ví dụ: Xóa file3 trong thumuc1 với thao tác không chấp thuận xóa và kiểm tra.</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Rm05.png" alt="Rm05.png"></p>
+	<li><code>-I</code> : Với tùy chọn này thì chương trình lệnh sẽ xuất hiện thông báo xác thực đúng 1 lần khi bạn tiến hành xóa hàng loạt file với số lượng lớn hơn 3 file.</li>
+	<em>Ví dụ: Xóa 5 file tech(x) trong thumuc1 cùng lúc và kiểm tra:</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Rm06.png" alt="Rm06.png"></p>
+	<li><code>-d</code>, <code>--dir</code>: xóa một thư mục rỗng.</li>
+	<em>Ví dụ: Tạo một thư mục rỗng là thumuc2 và xóa thư mục rỗng đó.</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Rm07.png" alt="Rm07.png"></p>
+	<li><code>-r</code>, <code>-R</code>, <code>--recursive</code>: xóa tất cả các file và các thư mục con đệ quy của thư mục mẹ.</li>
+	<em>Ví dụ: Tạo thư mục vidu2 trong thumuc1 với các tệp con vidu2-1.txt, vidu2-2.txt. Sau đó xóa toàn bộ thư mục vidu2 và kiểm tra.</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Rm08.png" alt="Rm08.png"></p>
+	<li><code>--help</code>: hỗ trợ</li>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Rm09.png" alt="Rm09.png"></p>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Rm10.png" alt="Rm10.png"></p>
+	<li><code>-v</code>, <code>--verbose</code>: Quá trình hoạt động của lệnh <code>rm</code> sẽ được hiển thị.</li>
+	<em>Ví dụ:</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Rm11.png" alt="Rm11.png"></p>
+	<li>Xóa các file có ký tự đặc biệt như (–, —, \, &, $, ?, <, >, ;, *, khoảng trắng)</li>
+	<p>Lâu lâu trên hệ thống bạn phát hiện có file bắt đầu tên bằng kí tự đặc biệt. Nếu xoá theo kiểu cú pháp bình thường sẽ không được.</p>
+	<em>Ví dụ: Một file có tên ‘<strong>-foo</strong>’. Để xóa file này thực hiện theo cú pháp <code>rm</code> như dưới:</em>
+	<p><code>$ rm -- -foo
+	
+	$ rm ./-foo</code></p>
+</ul>
+<h1>*************THE END*************</h1>
