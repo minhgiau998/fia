@@ -217,6 +217,7 @@ Nếu gói được cài đặt, hệ thống sẽ hiển thị thông báo <cod
 Cài đặt <code>locate</code> trên <strong>Ubuntu</strong>, <strong>Debian</strong> và <strong>Google Shell</strong>:
 
 <code>$ apt update
+
 $ sudo apt install mlocate</code>
 
 <strong>Cơ Sở Dữ Liệu</strong> có thể được cập nhật thủ công bằng cách chạy lệnh <code>updatedb</code> với quyền <strong>root</strong> hoặc người dùng có quyền.
