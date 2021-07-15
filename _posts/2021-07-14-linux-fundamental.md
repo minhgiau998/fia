@@ -226,5 +226,75 @@ $ sudo apt install mlocate</code></p>
 <em>Ví dụ:</em>
 <p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Locate03.png" alt="Locate03.png"></p>
 <h3>Cú pháp</h3>
-<p><code>locate [Options] Pattern...</code></p>
+<p><code>$ locate [Options] Pattern...</code></p>
 <h3>Cách sử dụng</h3>
+<p>Khi sử dụng mà không có bất kỳ tùy chọn nào, lệnh locate sẽ in đường dẫn tuyệt đối của tất cả các file và thư mục phù hợp với mẫu tìm kiếm và người dùng có quyền đọc file trong kết quả tìm kiếm.</p>
+<em>Ví dụ: Để tìm kiếm file2.txt hãy nhập:</em>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Locate04.png" alt="Locate04.png"></p>
+<p>Đầu ra sẽ bao gồm tên tất cả các file chứa file2.txt trong tên của chúng:</p>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Locate05.png" alt="Locate05.png"></p>
+<p>Nếu danh sách kết quả dài, để dễ đọc hơn, bạn có thể chuyển đầu ra sang lệnh <code>less</code>.</p>
+<em>Ví dụ:</em>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Locate06.png" alt="Locate06.png"></p>
+<em>Kết quả:</em>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Locate07.png" alt="Locate07.png"></p>
+<em>Chú ý: Bấm <strong>q</strong> để thoát khỏi màn hình kết quả.</em>
+<p>Ký tự đại diện là ký hiệu được sử dụng để thể hiện số không, một hoặc nhiều ký tự.</p>
+<em>Ví dụ: để tìm kiếm tất cả các file .md trên hệ thống bạn sẽ nhập như sau:</em>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Locate08.png" alt="Locate08.png"></p>
+<p>Đôi lúc kết quả tìm được rất nhiều nên để giới hạn kết quả tìm kiếm, hãy sử dụng tùy chọn <code>-n</code> theo sau là số lượng kết quả bạn muốn được hiển thị.</p>
+<em>Ví dụ: Lệnh sau sẽ tìm kiếm tất cả các <strong>file .py</strong> và chỉ hiển thị 10 kết quả:</em>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Locate09.png" alt="Locate09.png"></p>
+<p>Theo mặc định, lệnh <code>locate</code> thực hiện tìm kiếm có phân biệt chữ hoa chữ thường. Tùy chọn <code>-i</code> (<code>--ignore-case</code>) cho lệnh <code>locate</code> biết hãy chạy tìm kiếm không phân biệt chữ hoa chữ thường.</p>
+<em>Ví dụ: Lệnh sau sẽ tìm kiếm tất cả các file <strong>readme.md</strong> mà không phân biệt chữ hoa hay chữ thường:</em>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Locate10.png" alt="Locate10.png"></p>
+<em>Kết quả rất nhiều nên chỉ trích một vài thôi:</em>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Locate11.png" alt="Locate11.png"></p>
+<p>Để hiển thị số lượng của tất cả các mục phù hợp, sử dụng tùy chọn <code>-c</code> (<code>--count</code>). Ví dụ: Lệnh sau sẽ trả về số lượng của tất cả các file có chứa .md trong tên của chúng:</p>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Locate12.png" alt="Locate12.png"></p>
+<p>Để chỉ hiển thị tên của các file còn tồn tại ở thời điểm lệnh <code>locate</code> được chạy, hãy sử dụng tùy chọn <code>-e</code> (<code>--existing</code>).</p>
+<em>Ví dụ: Lệnh sau đây sẽ chỉ trả về các file .md hiện có:</em>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Locate13.png" alt="Locate13.png"></p>
+<em>Kết quả rất nhiều nên không tiện trích dẫn.</em>
+<p>Nếu cần chạy một tìm kiếm phức tạp hơn, bạn có thể sử dụng tùy chọn <code>-r</code> (<code>--regrex</code>) cho phép bạn tìm kiếm bằng cách sử dụng biểu thức chính quy thay vì mẫu. Tùy chọn này có thể được chỉ định nhiều lần.</p>
+<em>Ví dụ: Để tìm kiếm tất cả các file .mp4 và .avi trên hệ thống, không phân biệt chữ hoa, chữ thường, bạn sẽ chạy:</em>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Locate14.png" alt="Locate14.png"></p>
+<h2>Lệnh MV</h2>
+<h3>Định nghĩa</h3>
+<p>Lệnh <code>mv</code> cho phép bạn di chuyển file từ thư mục này sang thư mục khác trên Linux. Ngoài ra lệnh cũng cho phép bạn đổi tên file (không có lệnh đổi tên riêng). Mặc dù đơn giản nhưng cũng như lệnh <code>cp</code>, lệnh <code>mv</code> rất dễ gây nhầm lẫn. Trong shell nếu chúng ta nhầm lẫn một dòng có thể hỏng cả một shell script và chưa nói đến việc gây hại cho hệ thống.</p>
+<h3>Cú pháp</h3>
+<p><code>$ mv [Options] Source Destination</code></p>
+<p>Trong đó:</p>
+<ul>
+	<li><strong>Options</strong> là các tùy chọn.</li>
+	<li><strong>Source</strong> là file nguồn hoặc thư mục nguồn.</li>
+	<li><strong>Destination</strong> là tên file đích hoặc thư mục đích.</li>
+</ul>
+<em>Ví dụ: Một tệp tên file1.txt và sẽ được đổi tên thành file2.txt theo như sau:</em>
+<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Mv01.png" alt="Mv01.png"></p>
+<h3>Các Option của lệnh MV</h3>
+<ul>
+	<li><code>-i</code>, <code>--interactive</code>: Ghi đè file ở thư mục đích. Luôn có nhắc nhở trước khi ghi đè. <strong>Y</strong> là chấp nhận thao tác ghi đè và <strong>N</strong> là từ chối.</li>
+	<em>Ví dụ:</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Mv02.png" alt="Mv02.png"></p>
+	<li><code>-v</code>, <code>--verbose</code>: Quá trình hoạt động của lệnh <code>mv</code> sẽ được hiển thị.</li>
+	<em>Ví dụ:</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Mv03.png" alt="Mv03.png"></p>
+	<li><code>-f</code>, <code>--force</code>: Không nhắc nhở nếu có trường hợp ghi đè.</li>
+	<em>Ví dụ:</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Mv04.png" alt="Mv04.png"></p>
+	<li><code>-u</code>, <code>--update</code>: Cho phép lệnh <code>mv</code> chỉ di chuyển tệp với điều kiện nó mới hơn tệp đích. Đây là một tham số cho phép chỉ di chuyển một tệp khi tệp nguồn cũ hơn.</li>
+	<em>Ví dụ:</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Mv05.png" alt="Mv05.png"></p>
+	<li><code>-n</code>: Ngăn lệnh <code>mv</code> ghi đè lên một đối tượng Linux hiện có.</li>
+	<em>Ví dụ:</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Mv06.png" alt="Mv06.png"></p>
+	<li><code>-b</code>: Tạo bản sao lưu các tệp hiện có.</li>
+	<em>Ví dụ:</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Mv07.png" alt="Mv07.png"></p>
+	<li><code>-T</code>: Giá trị này cho phép đích được quản lý dưới dạng tệp nhưng không phải là thư mục.</li>
+	<em>Ví dụ:</em>
+	<p><img src="https://github.com/FIA-FPT/fia/blob/develop/assets/images/linux-fundamental/Mv08.png" alt="Mv08.png"></p>
+</ul>
+<h2>Lệnh RM</h2>
+<h3>Định nghĩa</h3>
