@@ -337,7 +337,7 @@ $ sudo apt install mlocate</code></p>
 	<p>Lâu lâu trên hệ thống bạn phát hiện có file bắt đầu tên bằng kí tự đặc biệt. Nếu xoá theo kiểu cú pháp bình thường sẽ không được.</p>
 	<em>Ví dụ: Một file có tên ‘<strong>-foo</strong>’. Để xóa file này thực hiện theo cú pháp <code>rm</code> như dưới:</em>
 	<p><code>$ rm -- -foo
-	
-	$ rm ./-foo</code></p>
+
+$ rm ./-foo</code></p>
 </ul>
 <h1>*************THE END*************</h1>
