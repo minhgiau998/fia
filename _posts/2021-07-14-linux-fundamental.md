@@ -201,7 +201,11 @@ author: fia
 <h2>Lệnh LOCATE</h2>
 <h3>Định nghĩa</h3>
 <p>Chương trình <code>locate</code> không tìm kiếm file trên ổ đĩa mỗi lần được sử dụng mà nó tìm kiếm thông tin được <strong>index</strong> cập nhật về danh sách đường dẫn các file trên <strong>Cơ Sở Dữ Liệu</strong> của riêng chương trình <code>locate</code>.
+
 File <strong>CSDL</strong> bao gồm thông tin về tên file và đường dẫn file đó. File **CSDL** đó có đường dẫn mặc định là: <code>/var/lib/mlocate/mlocate.db</code>
+
 Tùy thuộc vào bản phân phối và cách hệ thống được cung cấp, gói <code>locate</code> có thể được cài đặt sẵn trên hệ thống Linux.
+
 Để kiểm tra xem tiện ích <code>locate</code> có được cài đặt trên hệ thống hay không, hãy mở terminal, nhập <code>locate</code> và nhấn Enter.
+
 Nếu gói được cài đặt, hệ thống sẽ hiển thị thông báo <code>locate: no pattern to search for specified</code>.</p>
